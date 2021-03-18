@@ -3,15 +3,22 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
-    <title><%= htmlWebpackPlugin.options.title %></title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+    <link rel="stylesheet" type="text/css" href='/css/reset.css'>
+    <link rel="stylesheet"  href="//at.alicdn.com/t/font_2267943_uvb18ji8n1.css">
+    <title>硅谷外卖</title>
   </head>
+  <style>
+  </style>
   <body>
-    <noscript>
-      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
-    </noscript>
     <div id="app"></div>
-    <!-- built files will be auto injected -->
+    <script src="https://cdn.bootcdn.net/ajax/libs/fastclick/1.0.6/fastclick.js">
+      //移动端点击300ms延迟
+      if ('addEventListener' in document) {
+          document.addEventListener('DOMContentLoaded', function() {
+              FastClick.attach(document.body);
+          }, false);
+      }
+    </script>
   </body>
 </html>
